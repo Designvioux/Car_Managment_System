@@ -181,7 +181,7 @@ height: auto;
 
 
 
-.dashboard-wrapper{
+.dashboard-wrapper {
   width: 2vw; /* collapsed width */
   transition: width 0.3s ease;
   overflow: hidden;
@@ -271,7 +271,7 @@ margin-bottom: 1vh;
   z-index: 100;
 
   margin-top: 0vh;
-  width: 10vw;
+  width: 5vw;
 
 }
 
@@ -298,7 +298,7 @@ margin-bottom: 1vh;
 .Stats-head{
   display:flex;
   flex-direction: row;
-  gap:3.5vw;
+  gap:5vw;
 }
 .dropdown-wrapper {
   position: relative; /* Ensures dropdown-menu is positioned relative to this */
