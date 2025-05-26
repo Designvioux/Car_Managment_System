@@ -1,0 +1,142 @@
+/* .Home-Container{
+  margin: 0;
+top: 0;
+background-color: #F5F5F5;
+height:100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+overflow-y: auto;
+
+
+}
+*/
+.Dashboard-left{
+  display: flex;
+  flex-direction: row;
+}
+
+.right-side{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%; 
+  background-color: #F5F5F5;
+  height: auto;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+
+
+.H-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%; 
+  background-color: #F5F5F5;
+  height: 50vh;
+  gap: 16px; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.search-top{
+
+  width: 100%;
+
+  border-bottom: 1px solid #ccc;
+
+}
+
+
+
+.Statictics-container,
+.Trips-container {
+  background-color: #fff;
+  width: calc(50% - 10px); 
+  padding: 10px;
+  height: 45%; 
+  box-sizing: border-box;
+}
+
+.Map-container,
+.Schedule-container {
+  background-color: #fff;
+  width: calc(100% - 10px); 
+  padding: 10px;
+  height: 45%; 
+  box-sizing: border-box;
+}
+
+
+
+
+.bottom-cont{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Trip-Cont{
+  height: 50vh;
+  width: 50vw;
+  background-color:#fff ;
+}
+
+
+
+
+
+
+
+
+
+.Main-Container {
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+
+
+}
+.Page-Components{
+  width: 100;
+  height: 100%;
+
+}
+
+.D-MainContent{
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 100vw;
+}
+.dashboard-wrapper {
+  width: 60px; /* collapsed width */
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.dashboard-wrapper:hover {
+  width: 220px; /* expanded width */
+}
+
+/* Add this if you want a hover-tab always visible */
+.dashboard-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60px;
+  background: gray;
+  cursor: pointer;
+}
+
+/* Main content adapts */

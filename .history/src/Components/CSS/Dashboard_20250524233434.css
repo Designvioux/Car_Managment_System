@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+
+.Hamburger-Container {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* fixed from #ffff */
+  font-family: "Inter";
+  height: 80vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  position: absolute;
+  z-index: 100;
+}
+.Logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2vw;
+  
+}
+.logo-img{
+  
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  height: 4vh;
+  width:2vw;
+
+
+  border-radius: 6px;
+background: var(--primary-purple, #A162F7);
+}
+.Logo p{
+
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: var(--gray-Dark, #1F2128);
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.Hamburger-Container ul  {
+  text-decoration: none;
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 2vh;
+
+ padding: 0 2vw;
+
+}
+
+.Hamburger-Container ul li{
+
+color: var(--gray-dark-2, #5F6165);
+/* tittle/14 M */
+
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+flex-direction: row;
+gap: 0.3vw;
+}
+
+.Hamburger-Container ul li a{
+  display: flex;
+  align-items: center;
+}
+.last-content  {
+  display: flex;
+  margin: 0;
+  margin-top: auto; /* push this to the bottom */
+  flex-direction: column;
+}
+
+.last-content ul li a{
+display: flex;
+align-items: center;
+
+}
+.d-icon{
+  display: flex;
+width: 20px;
+height: 20px;
+padding: 0vh 0.3vw;
+justify-content: center;
+align-items: center;
+
+}
+.l-icon{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 0vh 0.1vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-board{
+
+background: #A162F7;
+color: white;
+padding: 10px 0vw;
+border-radius: 0.4vw;
+color: #FFF;
+gap: 0.5vw;
+width: 80vw;
+padding: 0.5vw;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

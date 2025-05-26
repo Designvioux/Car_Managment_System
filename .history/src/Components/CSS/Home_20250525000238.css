@@ -1,0 +1,151 @@
+ .Dashboard-Container{
+  margin: 0;
+top: 0;
+background-color: #F5F5F5;
+height:auto;
+
+display: flex;
+flex-direction: column;
+overflow-y: auto;
+
+
+
+}
+
+.Dashboard-left{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.right-side{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; 
+  background-color: #F5F5F5;
+  height: auto;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.D-heading{
+  display: flex;
+ flex-direction: column;
+  width: 30%; 
+  background-color: #F5F5F5;
+  height: 50vh;
+
+
+  box-sizing: border-box;
+
+}
+
+.H-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  background-color: #F5F5F5;
+  height: 50vh;
+  gap: 16px; 
+  padding: 2vh 2vw;
+  box-sizing: border-box;
+  border: 2px solid black;
+  
+}
+
+
+.search-top{
+
+ 
+
+  border-bottom: 1px solid #ccc;
+
+}
+
+
+
+.Statictics-container,
+.Trips-container {
+  background-color: #fff;
+  width: calc(50% - 10px); 
+  padding: 10px;
+  height: 45%; 
+  box-sizing: border-box;
+}
+
+.Map-container,
+.Schedule-container {
+  background-color: #fff;
+  width: calc(100% - 10px); 
+  padding: 10px;
+  height: 45%; 
+  box-sizing: border-box;
+}
+
+
+
+
+.bottom-cont{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+
+.D-MainContent{
+  margin-left:2vw;
+
+  height: auto;
+  width: 100vw;
+
+}
+
+.Page-Components{
+width: 100vw;
+border: 2px solid black;
+height: auto;
+}
+
+
+.Main-Container {
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+
+
+}
+
+
+
+.dashboard-wrapper {
+  width: 2vw; /* collapsed width */
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+}
+
+.dashboard-wrapper:hover {
+  width: 15vw; /* expanded width */
+}
+
+/* Add this if you want a hover-tab always visible */
+.dashboard-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60px;
+  background: gray;
+  cursor: pointer;
+}
+
+/* Main content adapts */
