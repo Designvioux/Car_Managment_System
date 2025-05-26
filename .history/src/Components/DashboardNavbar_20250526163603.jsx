@@ -117,33 +117,16 @@ const Dashboard = () => {
   </li>
 
   <li className='d-list'>
-  <div className='d-item' onClick={() => toggleDropdown('messages')}>
     <img src={Msg} className='d-icon' alt="Messages" />
-    <span>Messages</span>
-    </div>
-    {activeDropdown === 'messages' && (
-      <ul className='dropdown'>
-        <li><a href='/new-booking'>New Booking</a></li>
-        <li><a href='/booking-history'>Booking History</a></li>
-      </ul>
-    )}
+    <a>Messages</a>
   </li>
 </ul>
 
       </div>
    <div className='last-content'>
     <ul>
-      
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Setting} className='l-icon'></img><a>Setting</a>
-      </div>
-      </li> 
-      
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Logout}className='l-icon'></img>  <a>Log out</a>
-      </div></li>  
+     <li className='d-list'><img src={Setting} className='l-icon'></img><a>Setting</a></li> 
+     <li className='d-list'><img src={Logout}className='l-icon'></img>  <a>Log out</a></li>  
       </ul>
 
       </div>

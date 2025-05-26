@@ -140,10 +140,7 @@ const Dashboard = () => {
       </div>
       </li> 
       
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Logout}className='l-icon'></img>  <a>Log out</a>
-      </div></li>  
+     <li className='d-list'><img src={Logout}className='l-icon'></img>  <a>Log out</a></li>  
       </ul>
 
       </div>

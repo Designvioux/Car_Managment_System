@@ -171,7 +171,7 @@ height: auto;
 .Main-Container {
 
   height: 100vh;
-  width: 100vw;
+  width: 70vw;
   overflow: hidden;
   display: flex;
   overflow-y: auto;  /* Make it scrollable vertically */

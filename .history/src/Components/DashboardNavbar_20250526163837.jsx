@@ -142,8 +142,7 @@ const Dashboard = () => {
       
      <li className='d-list'>
      <div className='d-item' >
-      <img src={Logout}className='l-icon'></img>  <a>Log out</a>
-      </div></li>  
+      <img src={Logout}className='l-icon'></img>  <a>Log out</a></li>  
       </ul>
 
       </div>

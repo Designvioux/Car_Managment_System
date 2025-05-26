@@ -29,9 +29,8 @@ const Dashboard = () => {
 
         <ul>
   {/* Dashboard (no dropdown) */}
-  <li>
-    
-    <a className='d-board'><img src={Dboard} alt="Dashboard" className='d-img'  />Dashboard</a>
+  <li className='d-list'>
+    <a className='d-board'><img src={Dboard} alt="Dashboard" />Dashboard</a>
   </li>
 
   {/* Vehicle Management */}
@@ -65,85 +64,37 @@ const Dashboard = () => {
 
   {/* No dropdowns below */}
   <li className='d-list'>
-  <div className='d-item' onClick={() => toggleDropdown('sell')}>
+  <div className='d-item' onClick={() => toggleDropdown('booking')}>
     <img src={Car} className='d-icon' alt="Sell" />
-    <span>Sell Cars</span>
-    </div>
-    {activeDropdown === 'sell' && (
-      <ul className='dropdown'>
-        <li><a href='/new-booking'>New Booking</a></li>
-        <li><a href='/booking-history'>Booking History</a></li>
-      </ul>
-    )}
+    <a>Sell Cars</a>
   </li>
 
   <li className='d-list'>
-  <div className='d-item' onClick={() => toggleDropdown('buy')}>
     <img src={BCar} className='d-icon' alt="Buy" />
-    <span>Buy Cars</span>
-    </div>
-    {activeDropdown === 'buy' && (
-      <ul className='dropdown'>
-        <li><a href='/new-booking'>New Booking</a></li>
-        <li><a href='/booking-history'>Booking History</a></li>
-      </ul>
-    )}
+    <a>Buy Cars</a>
   </li>
 
   <li className='d-list'>
-  <div className='d-item' onClick={() => toggleDropdown('services')}>
     <img src={Services} className='d-icon' alt="Services" />
-    <span>Services</span>
-    </div>
-    {activeDropdown === 'services' && (
-      <ul className='dropdown'>
-        <li><a href='/new-booking'>New Booking</a></li>
-        <li><a href='/booking-history'>Booking History</a></li>
-      </ul>
-    )}
+    <a>Services</a>
   </li>
 
   <li className='d-list'>
-  <div className='d-item' onClick={() => toggleDropdown('calendar')}>
     <img src={Calendar} className='d-icon' alt="Calendar" />
-    <span>Calendar</span>
-    </div>
-    {activeDropdown === 'calendar' && (
-      <ul className='dropdown'>
-        <li><a href='/new-booking'>New Booking</a></li>
-        <li><a href='/booking-history'>Booking History</a></li>
-      </ul>
-    )}
+    <a>Calendar</a>
   </li>
 
   <li className='d-list'>
-  <div className='d-item' onClick={() => toggleDropdown('messages')}>
     <img src={Msg} className='d-icon' alt="Messages" />
-    <span>Messages</span>
-    </div>
-    {activeDropdown === 'messages' && (
-      <ul className='dropdown'>
-        <li><a href='/new-booking'>New Booking</a></li>
-        <li><a href='/booking-history'>Booking History</a></li>
-      </ul>
-    )}
+    <a>Messages</a>
   </li>
 </ul>
 
       </div>
    <div className='last-content'>
     <ul>
-      
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Setting} className='l-icon'></img><a>Setting</a>
-      </div>
-      </li> 
-      
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Logout}className='l-icon'></img>  <a>Log out</a>
-      </div></li>  
+     <li className='d-list'><img src={Setting} className='l-icon'></img><a>Setting</a></li> 
+     <li className='d-list'><img src={Logout}className='l-icon'></img>  <a>Log out</a></li>  
       </ul>
 
       </div>

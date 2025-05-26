@@ -8,7 +8,7 @@
   padding: 0;
   background-color: #fff; /* fixed from #ffff */
   font-family: "Inter";
-  height: 90vh;
+  height: 80vh;
   width: 20vw;
   display: flex;
   flex-direction: column; /* vertical layout */
@@ -174,7 +174,7 @@ cursor: pointer;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
-  padding: 1vh 0vw 0vh 0vw;
+  padding: 0.8vh 0vw;
   position: relative;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -189,26 +189,23 @@ cursor: pointer;
   gap: 10px;
   width: 100%;
   cursor: pointer;
-  padding: 0.4vh 0vw 0.8vh 0vw;
 }
 
 
 .dropdown {
   list-style: none;
-  background-color: #f4edff;
-  padding: 1vh 0vw;
+  background-color: #f0f0f0;
+  padding: 8px 12px;
   margin: 0;
   border-radius: 5px;
-  width: 11vw;
+  width: 10;
   display: flex;
-  height: 100%;
   flex-direction: column;
 }
 
 
 .dropdown li {
-  padding: 1vh 0;
-
+  padding: 5px 0;
 }
 
 .dropdown li a {
@@ -219,7 +216,6 @@ cursor: pointer;
 
 .dropdown li a:hover {
   color: #A162F7;
-
 }
 
 

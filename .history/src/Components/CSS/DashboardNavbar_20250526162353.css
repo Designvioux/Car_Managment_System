@@ -8,7 +8,7 @@
   padding: 0;
   background-color: #fff; /* fixed from #ffff */
   font-family: "Inter";
-  height: 90vh;
+  height: 80vh;
   width: 20vw;
   display: flex;
   flex-direction: column; /* vertical layout */
@@ -195,7 +195,7 @@ cursor: pointer;
 
 .dropdown {
   list-style: none;
-  background-color: #f4edff;
+  background-color: #f0f0f0;
   padding: 1vh 0vw;
   margin: 0;
   border-radius: 5px;
@@ -208,7 +208,6 @@ cursor: pointer;
 
 .dropdown li {
   padding: 1vh 0;
-
 }
 
 .dropdown li a {
@@ -219,7 +218,7 @@ cursor: pointer;
 
 .dropdown li a:hover {
   color: #A162F7;
-
+  background-color: ;
 }
 
 

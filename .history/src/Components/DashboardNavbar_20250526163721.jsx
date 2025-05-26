@@ -133,17 +133,8 @@ const Dashboard = () => {
       </div>
    <div className='last-content'>
     <ul>
-      
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Setting} className='l-icon'></img><a>Setting</a>
-      </div>
-      </li> 
-      
-     <li className='d-list'>
-     <div className='d-item' >
-      <img src={Logout}className='l-icon'></img>  <a>Log out</a>
-      </div></li>  
+     <li className='d-list'><img src={Setting} className='l-icon'></img><a>Setting</a></li> 
+     <li className='d-list'><img src={Logout}className='l-icon'></img>  <a>Log out</a></li>  
       </ul>
 
       </div>

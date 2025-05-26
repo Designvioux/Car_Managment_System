@@ -185,7 +185,7 @@ height: auto;
   width: 2vw; /* collapsed width */
   transition: width 0.3s ease;
   overflow: hidden;
-  position: relative;
+  position: ew;
   z-index: 10;
   border: 1px solid #A162F7;
   border-radius:10px ;
