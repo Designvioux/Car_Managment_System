@@ -12,7 +12,6 @@ export default function VehicleDetail() {
             <button className="btn edit">Edit</button>
           </div>
         </div>
-
         <div className="content-grid">
           <div className="details-card">
             <table>

@@ -2,9 +2,11 @@
 .report-container {
   background: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-left: 20%;
+ margin-top: 40px;
 }
 
 .report-header {
@@ -90,13 +92,18 @@
 .report-table tr:nth-child(even) {
   background-color: #fafafa;
 }
-
-.action-icons svg {
-  margin-right: 10px;
+.action-icons{
+  display: flex;
+  gap: 0.3vw;
   cursor: pointer;
-  color: #555;
 }
-
-.action-icons svg:hover {
-  color: #8b5cf6;
+.Eye-icon{
+  color: #000000;
+ 
+}
+.Edit-icon{
+  color: #A162F7;
+}
+.Trash-icon{
+  color: #FF1400;
 }
