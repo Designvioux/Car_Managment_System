@@ -1,0 +1,142 @@
+.delete-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+padding: 3vw 24vw 0vw 2vw;
+flex-direction: column;
+align-self: stretch;
+}
+
+.delete-popup-modal {
+  background-color: #ffffff;
+  padding: 1vw 2vw;
+  margin-top: -9vw;
+  width: 30vw;
+  height: 53vh;
+  text-align: center;
+  border-radius: 1vw;
+}
+
+.delete-popup-icon {
+  width: 5.5vw;
+  height: 5.5vw;
+  margin-bottom: 16px;
+}
+
+.delete-popup-modal h2 {
+  color: var(--Gray-900, #181D27);
+text-align: center;
+font-family: Inter;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+  margin-top: 0vw;
+}
+
+.delete-popup-modal p {
+  color: var(--Gray-600, #535862);
+text-align: center;
+font-family: Inter;
+font-size: 1vw;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+  margin-bottom: 24px;
+}
+
+.delete-btn,
+.pop-cancel-btn {
+  width: 100%;
+  padding: 1.1vw;
+  border: none;
+  cursor: pointer;
+   border-radius: 1vw;
+}
+
+.delete-btn {
+ 
+border: 1px solid var(--Error-600, #D92D20);
+background: var(--Error-600, #D92D20);
+box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  margin-bottom: 12px;
+
+
+  color: var(--Base-White, #FFF);
+font-family: Inter;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+}
+
+.pop-cancel-btn {
+  background-color: white;
+  border: 0.1vw solid #ccc;
+padding: 0.9vw;
+  color: var(--Gray-700, #414651);
+font-family: Inter;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+}
+
+
+@media (min-width: 321px) and (max-width: 769px) {
+  .delete-popup-overlay {
+    padding: 14.5vw 1vw 20vw 5vw;
+    flex-direction: column;
+  }
+
+  .delete-popup-modal {
+    width: 70vw;
+    height: auto;
+    padding: 6vw 5vw;
+    margin-top: 0;
+    border-radius: 4vw;
+  }
+
+  .delete-popup-icon {
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 2vw;
+  }
+
+  .delete-popup-modal h2 {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    margin-top: 0;
+    margin-bottom: 1vw;
+  }
+
+  .delete-popup-modal p {
+    font-size: 3.5vw;
+    line-height: 5.5vw;
+    margin-bottom: 3vw;
+  }
+
+  .delete-btn,
+  .pop-cancel-btn {
+    width: 100%;
+    padding: 4vw;
+    font-size: 4.2vw;
+    border-radius: 2.5vw;
+  }
+
+  .delete-btn {
+    margin-bottom: 2vw;
+  }
+
+  .pop-cancel-btn {
+    border-width: 0.5vw;
+    padding: 3vw;
+  }
+}
