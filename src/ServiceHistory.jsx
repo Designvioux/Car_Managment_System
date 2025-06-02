@@ -28,7 +28,7 @@ const ServiceHistory = () => {
       }
     };
 
-    // ✅ Fix added here
+   
     document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
