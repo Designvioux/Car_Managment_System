@@ -19,31 +19,20 @@ font-family: "DM Sans";
   margin: 0;
   top: 0;
   background-color: #F5F5F5;
-  height: 100vh; /* Fixed height to enable scroll */
+  height: auto; /* Fixed height to enable scroll */
   display: flex;
   flex-direction: column;
   font-family: "DM Sans";
- 
+  overflow-y: auto; /* Enables vertical scroll */
 }
 
 /* If you have a header/navbar above your main content, consider: */
 .D-MainContent {
-  margin-left:0vw;
-
+  margin-left: 2vw;
+  flex-grow: 1; /* Takes remaining height */
   width: 85vw;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.search-top {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #F5F5F5;
-
-
+  overflow-y: auto; /* Enables internal scrolling */
+  padding-bottom: 5vh; /* Prevents last element from being cut off */
 }
 
 /* Ensure parent containers are not limiting height */
@@ -51,22 +40,19 @@ font-family: "DM Sans";
   height: 100vh;
   width: 100vw;
   display: flex;
-
+  overflow: hidden; /* Prevents double scrollbars */
 }
 
 .Page-Components {
   width: 100vw;
   flex-grow: 1;
-
-
-
-  overflow: hidden;
+  overflow-y: auto;
+  height: auto; /* Let it grow naturally */
 }
 
 .main-content {
-
   overflow-y: auto;
-  
+  max-height: 100%;
 }
 
 
@@ -74,16 +60,10 @@ font-family: "DM Sans";
 
 
 
-.bottom-cont {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
 
-  height: calc(200vh - 80px); /* If search-top is 60px */
-  
-overflow-y: auto;
-  padding-right: 1vw;
-}
+
+
+
 
 
 
@@ -103,7 +83,6 @@ overflow-y: auto;
   display: flex;
   flex-direction: row;
 
-
 }
 
 .right-side{
@@ -112,7 +91,7 @@ overflow-y: auto;
   width: 55vw; 
   background-color: #F5F5F5;
   height: 90vh;
-margin-left: 2vw ;
+
   padding: 2vh 0vw;
   box-sizing: border-box;
  
@@ -123,11 +102,11 @@ margin-left: 2vw ;
 .D-heading{
   display: flex;
  flex-direction: column;
-  width: 30vw; 
+  width: 30%; 
   background-color: #F5F5F5;
 height: auto;
 
-margin-left: 1vw;
+
   box-sizing: border-box;
 
 }
@@ -209,7 +188,7 @@ line-height: 24px; /* 120% */
   background-color: #fff;
   width: calc(100% - 60px); 
  border-radius: 20px;
-  height:44vh; 
+  height:45%; 
   box-sizing: border-box;
 
 
@@ -226,7 +205,7 @@ padding: 0.2vh 2vw;
 
 
 
-/* 
+
 .bottom-cont{
   display: flex;
   flex-direction: row;
@@ -234,7 +213,7 @@ padding: 0.2vh 2vw;
 
 
 
-} */
+}
 
 
 
@@ -275,45 +254,21 @@ height: auto;
 
 
 
-.dashboard-wrapper{
-  width: 2vw; /* collapsed width */
+/* .dashboard-wrapper {
+  width: 2vw;
   transition: width 0.3s ease;
   overflow: hidden;
-  position:absolute;
+  position: absolute;
   z-index: 10;
   border: 1px solid #A162F7;
-  border-radius:10px ;
-  overflow-y: auto;
-}
-
-.dashboard-wrapper::-webkit-scrollbar {
-  width: 0.1vw; /* Width of vertical scrollbar */
-}
-
-/* Track */
-.dashboard-wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 10px;
-}
-
-/* Handle */
-.dashboard-wrapper::-webkit-scrollbar-thumb {
-  background: #A162F7;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-.dashboard-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #7c3aed;
-}
-
+} */
 
 .dashboard-wrapper:hover {
-  width: 18vw; /* expanded width */
+  width: 15vw; /* expanded width */
 }
 
 /* Add this if you want a hover-tab always visible */
-/* .dashboard-wrapper::after {
+.dashboard-wrapper::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -324,7 +279,7 @@ height: auto;
   background: var(--primary-purple, #A162F7);
   cursor: pointer;
  
-} */
+}
 
 .Trips-container{
   display: flex;
@@ -392,7 +347,7 @@ margin-bottom: 1vh;
 .Stats-head{
   display:flex;
   flex-direction: row;
-  gap:3.5vw;
+  gap:5vw;
 }
 .dropdown-wrapper {
   position: relative; /* Ensures dropdown-menu is positioned relative to this */
