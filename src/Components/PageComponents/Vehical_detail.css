@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  border: 2px solid #fff;
+  border-radius:20px;
+  width: 80%;
+ margin-left: 20vw;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.25);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header h2 {
+ color: #000;
+font-family: DM Sans;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.actions .btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.btn.delete {
+  background: #fff;
+  color: #A162F7;
+  border: 1px solid #A162F7;
+
+}
+
+.btn.edit {
+  background: #A162F7;
+  color: white;
+   border: 1px solid #A162F7;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+ 
+}
+.details-card {
+  border: 1px solid #ccc;           /* Box border */
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 35vw;
+}
+
+.details-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+ color: #000;
+font-family: Poppins;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.16px;
+}
+
+.details-card table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #7F7F7F;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.14px;
+}
+
+
+/* Remove line from the last row */
+.details-card table tr:last-child td {
+  border-bottom: none;
+}
+
+.details-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.documents-card h3 {
+ color: #000;
+font-family: Poppins;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.16px;
+  margin-bottom: 12px;
+}
+.details-card table tr {
+  border: 1px dotted #ccc;
+}
+.documents-card table tr{
+  border:1px dotted #ccc;
+}
+.details-card table td {
+  padding: 8px;
+}
+ .documents-card{
+  border: 1px solid #ccc;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  width: 35vw;
+  height: 34vh;
+ }
+ .document-card table td {
+  padding: 8px;
+}
+.document-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.document-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.document-card table td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0; /* Row lines */
+}
+
+/* Remove line from the last row */
+.document-card table tr:last-child td {
+  border-bottom: none;
+}
+
+table {
+  width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
+  
+}
+td {
+  padding: 6px 0 0 8px;
+  /* padding-top: 2px; */
+  color: #374151;
+}
+
+td:first-child {
+  color: #7F7F7F;
+font-family: Poppins;
+font-size: 1vw;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.14px;
+  width: 40%;
+  padding-top: 0px;
+}
+
+.link {
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: left;
+}
