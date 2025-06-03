@@ -287,9 +287,9 @@ height: auto;
 }
 
 .dashboard-wrapper::-webkit-scrollbar {
-  width: 0.1vw; /* Width of vertical scrollbar 
+  width: 0.1vw; /* Width of vertical scrollbar */
 }
-*/
+
 /* Track */
 .dashboard-wrapper::-webkit-scrollbar-track {
   background: #f1f1f1; 

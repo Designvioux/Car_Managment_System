@@ -112,7 +112,7 @@ overflow-y: auto;
   width: 55vw; 
   background-color: #F5F5F5;
   height: 90vh;
-margin-left: 2vw ;
+margin-left: 3vw ;
   padding: 2vh 0vw;
   box-sizing: border-box;
  
@@ -123,11 +123,11 @@ margin-left: 2vw ;
 .D-heading{
   display: flex;
  flex-direction: column;
-  width: 30vw; 
+  width: 30%; 
   background-color: #F5F5F5;
 height: auto;
 
-margin-left: 1vw;
+
   box-sizing: border-box;
 
 }
@@ -282,34 +282,10 @@ height: auto;
   position: relative;
   z-index: 10;
   border: 1px solid #A162F7;
-  border-radius:10px ;
-  overflow-y: auto;
-}
-
-.dashboard-wrapper::-webkit-scrollbar {
-  width: 0.1vw; /* Width of vertical scrollbar 
-}
-*/
-/* Track */
-.dashboard-wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 10px;
-}
-
-/* Handle */
-.dashboard-wrapper::-webkit-scrollbar-thumb {
-  background: #A162F7;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-.dashboard-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #7c3aed;
-}
-
+} */
 
 .dashboard-wrapper:hover {
-  width: 18vw; /* expanded width */
+  width: 15vw; /* expanded width */
 }
 
 /* Add this if you want a hover-tab always visible */
