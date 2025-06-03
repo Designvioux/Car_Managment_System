@@ -1,0 +1,493 @@
+ /* .Dashboard-Container{
+  margin: 0;
+top: 0;
+background-color: #F5F5F5;
+height:auto;
+
+display: flex;
+flex-direction: column;
+font-family: "DM Sans";
+
+
+
+
+} */
+
+
+
+.Dashboard-Container {
+  margin: 0;
+  top: 0;
+  background-color: #F5F5F5;
+  height: auto; /* Fixed height to enable scroll */
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans";
+ 
+}
+
+/* If you have a header/navbar above your main content, consider: */
+.D-MainContent {
+  margin-left: 2vw;
+  flex-grow: 1; /* Takes remaining height */
+  width: 85vw;
+  overflow-y: auto; /* Enables internal scrolling */
+  padding-bottom: 5vh; /* Prevents last element from being cut off */
+}
+
+/* Ensure parent containers are not limiting height */
+.Main-Container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden; /* Prevents double scrollbars */
+}
+
+.Page-Components {
+  width: 100vw;
+  flex-grow: 1;
+  overflow-y: auto;
+  height: auto; /* Let it grow naturally */
+}
+
+.main-content {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Dashboard-left{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.right-side{
+  display: flex;
+  flex-wrap: wrap;
+  width: 55vw; 
+  background-color: #F5F5F5;
+  height: 90vh;
+
+  padding: 2vh 0vw;
+  box-sizing: border-box;
+ 
+  
+
+}
+
+.D-heading{
+  display: flex;
+ flex-direction: column;
+  width: 30%; 
+  background-color: #F5F5F5;
+height: auto;
+
+
+  box-sizing: border-box;
+
+}
+.D-heading h2{
+  margin: 2vh 0vw 1vh 1vw ;
+}
+
+.H-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  background-color: #F5F5F5;
+  height: 55vh;
+  gap: 16px; 
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+
+
+  
+}
+
+
+.search-top{
+
+ 
+
+  border-bottom: 1px solid #ccc;
+
+}
+
+.sub-icons{
+  height: 4vh;
+  width: 2vw;
+}
+.s-heading{
+  display: flex;
+  align-items: center;
+  color: #000;
+  gap: 5px;
+
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+}
+
+.Statictics-container,
+.Trips-container {
+  background-color: #fff;
+  width: calc(50% - 10px); 
+
+  height: 45%; 
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.Map-container,
+.Schedule-container {
+  background-color: #fff;
+  width: calc(100% - 60px); 
+ border-radius: 20px;
+  height: 65%; 
+  box-sizing: border-box;
+  margin: 2vh 0vw ;
+
+}
+
+.schedule-head{
+  color: var(--Black, #1A1919);
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  padding: 2vh 2vw; 
+}
+.CarDriverAva-container{
+  background-color: #fff;
+  width: calc(100% - 60px); 
+ border-radius: 20px;
+  height:45%; 
+  box-sizing: border-box;
+
+
+}
+.car-head{
+  color: var(--Black, #1A1919);
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+padding: 0.2vh 2vw; 
+}
+
+
+
+
+.bottom-cont{
+  display: flex;
+  flex-direction: row;
+
+
+
+
+}
+
+
+
+
+/* .D-MainContent{
+  margin-left:2vw;
+
+  height: auto;
+  width:85vw;
+
+
+} */
+
+
+/* .Page-Components{
+width: 100vw;
+
+height: auto;
+
+
+} */
+
+/* .main-content{
+  overflow-y: auto; 
+
+} */
+
+/* 
+.Main-Container {
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+
+
+} */
+
+
+
+/* .dashboard-wrapper {
+  width: 2vw;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid #A162F7;
+} */
+
+.dashboard-wrapper:hover {
+  width: 15vw; /* expanded width */
+}
+
+/* Add this if you want a hover-tab always visible */
+.dashboard-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60px;
+  background: var(--primary-purple, #A162F7);
+  cursor: pointer;
+ 
+}
+
+.Trips-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.Trips-box{
+  width: calc(95% - 10px); 
+  height: 100vh;
+  background-color: #fff;
+
+  margin: 2vh 1vw;
+  border-radius:10px ;
+}
+
+
+
+
+
+
+.dropdown-button {
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+ border-radius:20px ;
+  padding: 1.5vh 1vw;
+width: 10vw;
+margin-bottom: 1vh;
+  
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 100;
+
+  margin-top: 0vh;
+  width: 10vw;
+
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: var(--primary-purple, #A162F7);
+  color: #fff;
+}
+
+
+.arrow {
+  transition: transform 0.3s ease;
+  font-size: 12px;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.Stats-head{
+  display:flex;
+  flex-direction: row;
+  gap:5vw;
+}
+.dropdown-wrapper {
+  position: relative; /* Ensures dropdown-menu is positioned relative to this */
+  display: inline-block;
+  margin-top: 3vh;
+}
+
+
+
+.schedule-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7vw;
+
+
+}
+
+
+
+.toggle-buttons {
+  display: flex;
+
+  gap: 0.5vw;
+
+
+
+  background: rgba(161, 98, 247, 0.08);
+  
+  padding: 1vh 3vw;
+  border-radius: 30px;
+  
+}
+
+.toggle-buttons button {
+  padding: 1.3vh 3vw;
+  border: none;
+  border-radius: 20px;
+  background-color :#EFEAF5;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-top: 0vh;
+  color: #A162F7;
+}
+
+.toggle-buttons button.active {
+  background: var(--primary-purple, #fefeff);
+ color: #A162F7;
+}
+
+.trip-button-container {
+  display: flex;
+  gap: 0.5vw;
+
+
+
+  background: rgba(161, 98, 247, 0.08);
+  
+  padding: 1vh 3vw;
+
+}
+
+.trip-btn {
+  padding: 1.3vh 3vw;
+  border: none;
+  border-radius: 20px;
+
+
+  background: rgba(161, 98, 247, 0.0);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-top: 0vh;
+  color: #A162F7;
+}
+
+.trip-btn.active {
+  background: var(--primary-purple, #fefeff);
+  color: #A162F7;
+}
+
+.trip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.trip-card {
+  margin:0vh auto;
+  margin-top: 2vh;
+  background: #ffffff;
+  padding: 1vh 1.5vw;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+.trip-card:hover{
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: 1s;
+}
+.trips-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+width: 28vw;
+margin-left: 1vw;
+
+
+
+}
+
+.see-all-btn {
+  background: none;
+  border: none;
+  color: #333334;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  gap: 0.3vw;
+
+}
+
+.see-all-btn:hover {
+  background: var(--primary-purple, #fefeff);
+  color: #A162F7;
+}
+
+
+.trips-header:hover .arrow {
+  transform: translateX(4px);
+  color: #A162F7;
+}
+
