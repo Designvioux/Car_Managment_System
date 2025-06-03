@@ -67,7 +67,7 @@ const Dashboard = () => {
   <li className='d-list'>
   <div className='d-item' onClick={() => toggleDropdown('sell')}>
     <img src={Car} className='d-icon' alt="Sell" />
-    <span>Driver Management</span>
+    <span>Driver Ma</span>
     </div>
     {activeDropdown === 'sell' && (
       <ul className='dropdown'>
@@ -80,7 +80,7 @@ const Dashboard = () => {
   <li className='d-list'>
   <div className='d-item' onClick={() => toggleDropdown('buy')}>
     <img src={BCar} className='d-icon' alt="Buy" />
-    <span>GPS Tracking</span>
+    <span>Buy Cars</span>
     </div>
     {activeDropdown === 'buy' && (
       <ul className='dropdown'>
@@ -93,7 +93,7 @@ const Dashboard = () => {
   <li className='d-list'>
   <div className='d-item' onClick={() => toggleDropdown('services')}>
     <img src={Services} className='d-icon' alt="Services" />
-    <span>Reports</span>
+    <span>Services</span>
     </div>
     {activeDropdown === 'services' && (
       <ul className='dropdown'>
@@ -103,7 +103,31 @@ const Dashboard = () => {
     )}
   </li>
 
- 
+  <li className='d-list'>
+  <div className='d-item' onClick={() => toggleDropdown('calendar')}>
+    <img src={Calendar} className='d-icon' alt="Calendar" />
+    <span>Calendar</span>
+    </div>
+    {activeDropdown === 'calendar' && (
+      <ul className='dropdown'>
+        <li><a href='/new-booking'>New Booking</a></li>
+        <li><a href='/booking-history'>Booking History</a></li>
+      </ul>
+    )}
+  </li>
+
+  <li className='d-list'>
+  <div className='d-item' onClick={() => toggleDropdown('messages')}>
+    <img src={Msg} className='d-icon' alt="Messages" />
+    <span>Messages</span>
+    </div>
+    {activeDropdown === 'messages' && (
+      <ul className='dropdown'>
+        <li><a href='/new-booking'>New Booking</a></li>
+        <li><a href='/booking-history'>Booking History</a></li>
+      </ul>
+    )}
+  </li>
 </ul>
 
       </div>

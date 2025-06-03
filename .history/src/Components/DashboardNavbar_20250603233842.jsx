@@ -103,7 +103,31 @@ const Dashboard = () => {
     )}
   </li>
 
- 
+  <li className='d-list'>
+  <div className='d-item' onClick={() => toggleDropdown('calendar')}>
+    <img src={Calendar} className='d-icon' alt="Calendar" />
+    <span>Calendar</span>
+    </div>
+    {activeDropdown === 'calendar' && (
+      <ul className='dropdown'>
+        <li><a href='/new-booking'>New Booking</a></li>
+        <li><a href='/booking-history'>Booking History</a></li>
+      </ul>
+    )}
+  </li>
+
+  <li className='d-list'>
+  <div className='d-item' onClick={() => toggleDropdown('messages')}>
+    <img src={Msg} className='d-icon' alt="Messages" />
+    <span>Messages</span>
+    </div>
+    {activeDropdown === 'messages' && (
+      <ul className='dropdown'>
+        <li><a href='/new-booking'>New Booking</a></li>
+        <li><a href='/booking-history'>Booking History</a></li>
+      </ul>
+    )}
+  </li>
 </ul>
 
       </div>
