@@ -1,6 +1,6 @@
 import React , {useState , useRef,useEffect, use} from 'react';
 
-import './CSS/Home.css';
+import '../';
 
 import stts from './icons/chart-bar-fill.png';
 import trip from './icons/list-dashes-fill.png'

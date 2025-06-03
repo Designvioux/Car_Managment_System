@@ -1,0 +1,50 @@
+[33mcommit e69482fb129350629a5ad611bb86205d8b4acc2a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 214f9ad 8a15576
+Author: keyursanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue Jun 3 15:44:04 2025 +0530
+
+    Merge branch 'main' of github.com:Designvioux/Car_Managment_System
+
+[33mcommit 214f9adc3e5d7e44284b97449014b36f5263b7d6[m
+Author: keyursanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue Jun 3 15:37:18 2025 +0530
+
+    pulled Component from pratiksha
+
+[33mcommit 97163088b39b7b827c0c110ca708026d92b71924[m
+Merge: d42777e f8a745a
+Author: keyursanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue Jun 3 15:18:25 2025 +0530
+
+    Merge branch 'keyur'
+
+[33mcommit 8a15576ed176633f70019e5ae5871a91486c026b[m
+Merge: d8e0a8f f8a745a
+Author: keyursanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue Jun 3 15:01:24 2025 +0530
+
+    Merge keyur branch into main with conflict resolution
+
+[33mcommit f8a745ab5af139248d68ebf2430d13c29280c84f[m[33m ([m[1;31morigin/keyur[m[33m, [m[1;32mkeyur[m[33m)[m
+Author: keyursanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue Jun 3 14:55:31 2025 +0530
+
+    6/3/25 keyur
+
+[33mcommit d8e0a8f5f4d066dc74638210cc3890998ccf3427[m
+Author: Keyur Sanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue May 27 01:16:56 2025 +0530
+
+    new keyur 2
+
+[33mcommit d42777e4cc938afb3e3c3bfc2fb1eca8d3ae3374[m
+Author: Keyur Sanglikar <sanglikarkeyur@gmail.com>
+Date:   Tue May 27 00:56:08 2025 +0530
+
+    new keyur 2
+
+[33mcommit f99ff96f978b12ac4165dfa098c3eda970b67d93[m
+Author: Keyur Sanglikar <sanglikarkeyur@gmail.com>
+Date:   Mon May 26 14:57:08 2025 +0530
+
+    Keyur 1 st commit
